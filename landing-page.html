@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TutorConnect</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="TutorConnect - Connect with expert tutors for personalized learning experiences. Join our platform to find the perfect tutor or become a tutor and share your knowledge.">
+    <meta name="keywords" content="TutorConnect, tutors, learning, education, tutoring platform, personalized learning, find a tutor, become a tutor, online education, educational support">
+    <meta name="author" content="TutorConnect Team">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    
+    <!-- Preconnect to Google Fonts and Font Stylesheets -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    
+    <!-- Vendor CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -13,23 +28,33 @@
     <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom Stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Background Image -->
     <div class="bg-image">
         <div class="overlay"></div>
+        
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <a class="navbar-brand" href="#"><h4>TutorConnect</h4></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <!-- Login Link -->
                         <li class="nav-item">
                             <a class="nav-link" href="login-page.html">Log in</a>
                         </li>
+                        <!-- Sign Up Modal Trigger -->
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</a>
                         </li>
@@ -38,13 +63,16 @@
             </div>
         </nav>
 
+        <!-- Main Content Container -->
         <div class="container d-flex h-100 align-items-center content">
             <div class="row w-100">
+                <!-- Left Column: Find Tutor Section -->
                 <div class="col-md-6 find-tutor animated">
                     <h1>FIND YOUR TUTOR</h1>
                     <p>Embark on a learning journey like never before with TutorConnect. Our platform is your gateway to a world of knowledge, offering a diverse range of tutors ready to empower you.</p>
                     <a href="learner-sign-up.html" class="btn btn-custom">BE A LEARNER</a>
                 </div>
+                <!-- Right Column: Become a Tutor Section -->
                 <div class="col-md-6 text-end become-tutor animated">
                     <h1>BECOME A TUTOR</h1>
                     <p>Step into the role of a tutor and guide learners on TutorConnect, where your expertise transforms lives. Join our community to share your knowledge and inspire a community eager for learning.</p>
@@ -54,14 +82,17 @@
         </div>
     </div>
 
+    <!-- About Section -->
     <div class="container mt-5">
         <div class="row about-section">
+            <!-- Left Column: About Us -->
             <div class="col-md-6 about-us-section slide-in">
                 <h2>About Us</h2>
                 <p>TutorConnect is a collaborative effort by a group of college students dedicated to changing the way tutoring services are accessed in the Philippines. With a vision of enhancing educational support, we aim to provide a platform where learners and tutors can connect.</p>
                 <h4>Our Team</h4>
                 <p>Our team combines skills in web development, design, and user experience. Together, we bring a mix of technical expertise and understanding of the educational landscape in the Philippines. Our goal is to ensure that TutorConnect offers a practical solution for all your tutoring needs.</p>
             </div>
+            <!-- Right Column: Our Story -->
             <div class="col-md-6 about-me-section slide-in-right">
                 <h2>Our Story</h2>
                 <p>The idea of TutorConnect was inspired by our adviser, who gave us a hint that sparked our imagination. We took that initial idea and expanded it, driven by our collective desire to make quality education accessible to everyone. As students, we understand the challenges of finding reliable and effective tutoring, and we set out to create a solution that addresses these needs.</p>
@@ -71,7 +102,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Sign Up Modal -->
     <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -81,6 +112,7 @@
                 </div>
                 <div class="modal-body text-center">
                     <p class="modal-text">Please Choose your role</p>
+                    <!-- Sign Up Buttons -->
                     <a href="learner-sign-up.html" class="btn btn-primary-custom btn-lg mb-2">Sign Up as Learner</a>
                     <br>
                     <a href="tutor-registration.html" class="btn btn-success-custom btn-lg">Sign Up as Tutor</a>
@@ -98,7 +130,10 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    
+    <!-- Custom Scripts -->
     <script src="assets/js/main.js"></script>
+    <!-- Bootstrap 5 JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
