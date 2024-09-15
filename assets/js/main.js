@@ -320,23 +320,29 @@
   document.addEventListener('DOMContentLoaded', function() {
     const aboutUsSection = document.querySelector('.about-us-section');
     const aboutMeSection = document.querySelector('.about-me-section');
-  
+    
     function handleScroll() {
       const aboutUsPosition = aboutUsSection.getBoundingClientRect().top;
       const aboutMePosition = aboutMeSection.getBoundingClientRect().top;
       const screenPosition = window.innerHeight / 1.3;
   
+      // Add 'show' class if the section is in view
       if (aboutUsPosition < screenPosition) {
         aboutUsSection.classList.add('show');
+      } else {
+        aboutUsSection.classList.remove('show'); // Remove if out of view
       }
-  
+      
       if (aboutMePosition < screenPosition) {
         aboutMeSection.classList.add('show');
+      } else {
+        aboutMeSection.classList.remove('show'); // Remove if out of view
       }
     }
-  
+    
     window.addEventListener('scroll', handleScroll);
   });
+  
   /** Rating */
   document.addEventListener('DOMContentLoaded', () => {
     const stars = document.querySelectorAll('.rating .fa-star');
